@@ -1,0 +1,19 @@
+{
+    "name": "delivery-app",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Delivery Web App",
+    "workspaces": [
+      "backend",
+      "frontend"
+    ],
+    "scripts": {
+      "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+      "build": "npm run workspace frontend build && npm run workspace backend build",
+      "start": "npm run workspace backend serve"
+    },
+    "author": "Jesús María Morán Rosado",
+    "devDependencies": {
+      "concurrently": "^7.1.0"
+    }
+  }

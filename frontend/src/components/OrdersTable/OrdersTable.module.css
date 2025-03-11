@@ -1,0 +1,10 @@
+.dateInputs {
+  margin-inline: 50px;
+  display: flex;
+  justify-self: center;
+}
+
+.checkButton {
+  align-self: flex-end;
+  margin-bottom: 5px;
+}

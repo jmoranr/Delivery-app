@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": false,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["node", "jest"],
+    "typeRoots": ["./src/types", "node_modules/@types"],
+    "paths": {
+      "axios": ["./src/types/axios"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "*.ts",
+    "api/**/*.ts",
+    "src/config"
+  ],
+  "exclude": ["node_modules", "**/*.d.ts", "dist", "./jest.config.js"]
+}
